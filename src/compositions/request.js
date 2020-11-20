@@ -5,8 +5,9 @@ export default function useRequest() {
 
   const sendRequest = async (callback) => {
     isFetching.value = true;
-    await callback();
+    const result = await callback();
     isFetching.value = false;
+    return result;
   };
 
   return {

@@ -33,7 +33,7 @@ export default {
         parts: [
           {
             id: 1,
-            author: "petr",
+            author: "petya",
             created: "2019-08-06 12:20",
             text: "Здравствуйте, тут есть кто-нибудь?",
           },
@@ -45,7 +45,7 @@ export default {
           },
           {
             id: 3,
-            author: "petr",
+            author: "petya",
             created: "2019-08-06 12:38",
             text: "Помогите мне настроить домен!",
           },

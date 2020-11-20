@@ -48,7 +48,7 @@ export default {
     const messageText = ref("");
 
     onMounted(() => {
-      scrollDown(dialogMessages);
+      if (document.getElementById("dialogMessages")) scrollDown(dialogMessages);
     });
 
     const submit = async (e) => {
