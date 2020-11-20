@@ -22,7 +22,11 @@
       v-model="messageText"
       :disabled="isFetching"
     )
-    button.send-form_submit(type="submit" :disabled="isFetching") 
+    button.send-form_submit(
+      type="submit" 
+      :disabled="isFetching"
+      :style="{backgroundImage: `url(${require('@/assets/img/icons/send-icon.svg')})`}"
+    ) 
 
 </template>
 
@@ -136,7 +140,6 @@ export default {
     background-color: #398bff
     border: none
     cursor: pointer
-    background-image: url('/img/icons/send-icon.svg')
     background-repeat: no-repeat
     background-position: 55% 55%
     background-size: 32px 18px
