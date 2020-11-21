@@ -16,12 +16,13 @@
     @submit.prevent="submit"
     :class="{'send-form--disabled': isFetching}"
   )
-    textarea.send-form_textarea(
-      type="text" 
-      placeholder="Введите текст..." 
-      v-model="messageText"
-      :disabled="isFetching"
-    )
+    .send-form_field
+      textarea.send-form_textarea(
+        type="text" 
+        placeholder="Введите текст..." 
+        v-model="messageText"
+        :disabled="isFetching"
+      )
     button.send-form_submit(
       type="submit" 
       :disabled="isFetching"
@@ -124,16 +125,17 @@ export default {
   &--disabled
     pointer-events: none
     user-select: none
+  &_field
+    flex: 1
   &_textarea
     font-family: "TT Norms", sans-serif
-    flex: 1
-    width: 100px
+    width: 100%
     height: 80px
-    margin: 0
+    padding: 20px 33px
+    margin: auto
     box-sizing: border-box
     border: none
     border-top: 1px solid #e9edf2
-    padding: 20px 33px 5px
     background-color: #fff
     resize: none
     &:focus
