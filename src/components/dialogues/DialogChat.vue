@@ -128,15 +128,14 @@ export default {
     font-family: "TT Norms", sans-serif
     flex: 1
     width: 100px
+    height: 80px
+    margin: 0
     box-sizing: border-box
     border: none
     border-top: 1px solid #e9edf2
-    padding: 0 33px
+    padding: 20px 33px 5px
     background-color: #fff
     resize: none
-    padding-top: 30px
-    padding-bottom: 10px
-    vertical-align: middle
     &:focus
       outline: none
   &_submit
